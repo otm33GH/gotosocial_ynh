@@ -9,6 +9,7 @@ source /usr/share/yunohost/helpers
 
 landing_page_user=""
 client_max_body_size="100M"
+main_domain=$(cat /etc/yunohost/current_host)
 
 # Config stuff:
 
@@ -83,7 +84,6 @@ if [ "$YNH_ARCH" == "armhf" ] || [ "$YNH_ARCH" == "i386" ]; then
     media_emoji_remote_max_size="0"
 fi
 
-main_domain=$(cat /etc/yunohost/current_host)
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
