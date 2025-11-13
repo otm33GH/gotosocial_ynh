@@ -83,6 +83,8 @@ if [ "$YNH_ARCH" == "armhf" ] || [ "$YNH_ARCH" == "i386" ]; then
     media_emoji_remote_max_size="0"
 fi
 
+main_domain=$(cat /etc/yunohost/current_host)
+
 #=================================================
 # STORE SETTINGS FROM MANIFEST
 #=================================================
